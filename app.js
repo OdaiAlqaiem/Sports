@@ -18,6 +18,7 @@ function favplayer(agepar) {
   }
   else {
     alert("Sorry, that is not found")
+    return
 
   }
 
@@ -51,6 +52,8 @@ function favplayer(agepar) {
 }
 
 
+
+
 // var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
 
 // if (favplayer == "Zedan") {
@@ -72,6 +75,31 @@ var footballNum = prompt("How many football do you rate our wrebsite ?")
 for (var i = 0; i < footballNum; i++) {
 
   document.write("<img src=https://s3-eu-west-1.amazonaws.com/eflanguagesblog/wp-content/uploads/2020/08/05093006/truth_english_football_hero.jpg ");
+
+}
+
+
+var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
+
+if (favplayer == "Zedan") {
+  document.write("<p>" + "great player in the history Zedan we have it here so you van watch it" + "</p>")
+}
+
+else if (favplayer == "Maradona") {
+  document.write("<p>" + "great player in the history Maradona we have it here so you van watch it" + "</p>")
+}
+
+else {
+  alert("Sorry that is not found")
+}
+
+
+
+var footballNum = prompt("How many football do you rate our wrebsite ?")
+
+for (var i = 0; i < footballNum; i++) {
+
+  document.write("<img src=https://s3-eu-west-1.amazonaws.com/eflanguagesblog/wp-content/uploads/2020/08/05093006/truth_english_football_hero.jpg ")
 
 }
 
