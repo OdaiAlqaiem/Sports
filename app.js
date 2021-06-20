@@ -8,18 +8,38 @@ var age = prompt("What is your age ")
 age = 2021 - age
 alert("you were born in this year " + age)
 
-if (age >= 20) {
+favplayer(age);
 
-  var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
+function favplayer(agepar) {
 
-  while (favplayer != "Zedan" && favplayer != "Maradona"){
-    favplayer = prompt("you intered wrong chooses please try again")
+  if (agepar >= 20) {
+
+    var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
+
+    while (favplayer != "Zedan" && favplayer != "Maradona") {
+      favplayer = prompt("you intered wrong chooses please try again")
+    }
+
+
+    var counter = prompt("How many items do you want ? " + favplayer)
+    console.log("the number of items =" + counter);
+
+
+    if (favplayer == "Zedan") {
+      document.write("<p>" + "great player in the history Zedan we have it here so you van watch it" + "</p>")
+    }
+
+    else if (favplayer == "Maradona") {
+      document.write("<p>" + "great player in the history Maradona we have it here so you van watch it" + "</p>")
+    }
+
+    else {
+      alert("Sorry, that is not found")
+    }
   }
 
 
-  var counter = prompt("How many items do you want ? " + favplayer)
-  console.log("the number of items =" + counter);
-
+  var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
 
   if (favplayer == "Zedan") {
     document.write("<p>" + "great player in the history Zedan we have it here so you van watch it" + "</p>")
@@ -30,13 +50,16 @@ if (age >= 20) {
   }
 
   else {
-    alert("Sorry, that is not found")
+    alert("Sorry that is not found")
+  }
+
+
+ 
+  var footballNum = prompt("How many football do you rate our wrebsite ?")
+
+  for (var i = 0; i < footballNum; i++) {
+
+    document.write("<img src=https://s3-eu-west-1.amazonaws.com/eflanguagesblog/wp-content/uploads/2020/08/05093006/truth_english_football_hero.jpg ")
+
   }
 }
-
-
-
-
-
-
-
