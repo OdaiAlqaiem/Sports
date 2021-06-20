@@ -16,6 +16,11 @@ function favplayer(agepar) {
 
     var favplayer = prompt("What is favourite player (Zedan , Maradona) ? ")
 
+else {
+  alert("Sorry, that is not found")
+
+}
+
     while (favplayer != "Zedan" && favplayer != "Maradona") {
       favplayer = prompt("you intered wrong chooses please try again")
     }
@@ -32,6 +37,7 @@ function favplayer(agepar) {
     else if (favplayer == "Maradona") {
       document.write("<p>" + "great player in the history Maradona we have it here so you van watch it" + "</p>")
     }
+
 
     else {
       alert("Sorry, that is not found")
